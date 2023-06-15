@@ -1,0 +1,744 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  
+    <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>Hexo</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+  
+<link rel="stylesheet" href="/css/sayo.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"|","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>さよのブログ</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>Home</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>Archives</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                <span>Categories</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>Tags</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>About</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/imgs/banner/default.webp') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="為す者は常に成り　行う者は常に至る"></span>
+          
+        </div>
+
+        
+      </div>
+
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div id="board"
+          style="margin-top: 0">
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2023/06/15/4-2-%E5%BE%8C%E3%82%8D%E3%81%AB%E6%B1%BA%E3%81%BE%E3%81%A3%E3%81%9F%E8%A1%A8%E7%8F%BE%E3%81%8C%E6%9D%A5%E3%82%8B%E5%89%AF%E8%A9%9E/" target="_self">
+          <img src="/imgs/article/asu.jpeg" srcset="/img/loading.gif" lazyload alt="4-2-後ろに決まった表現が来る副詞">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2023/06/15/4-2-%E5%BE%8C%E3%82%8D%E3%81%AB%E6%B1%BA%E3%81%BE%E3%81%A3%E3%81%9F%E8%A1%A8%E7%8F%BE%E3%81%8C%E6%9D%A5%E3%82%8B%E5%89%AF%E8%A9%9E/" target="_self">
+          4-2-後ろに決まった表現が来る副詞
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt " href="/2023/06/15/4-2-%E5%BE%8C%E3%82%8D%E3%81%AB%E6%B1%BA%E3%81%BE%E3%81%A3%E3%81%9F%E8%A1%A8%E7%8F%BE%E3%81%8C%E6%9D%A5%E3%82%8B%E5%89%AF%E8%A9%9E/" target="_self">
+        <div>
+          後ろに決まった表現が来る副詞言葉と例文ウォーミングアップ             是不是有点奇怪？——            A:最近、うちの店、お客さんがさっぱり来るんですよ。もう大変でね。B:えっ！？お客さんは、来るんですか、来ないんですか。 言葉 否定　〜ない／ないだろう  一切〜ない 病気になってから、彼は一切タバコを吸わなくなった。   さっぱり〜ない お酒を飲み過ぎて、昨夜のことはさっ
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-06-15 20:39" pubdate>
+              2023-06-15
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2023/06/14/4-1-%E7%A8%8B%E5%BA%A6%E3%83%BB%E6%99%82%E9%96%93%E3%83%BB%E9%A0%BB%E5%BA%A6%E3%81%AE%E5%89%AF%E8%A9%9E/" target="_self">
+          <img src="/imgs/article/asu.jpeg" srcset="/img/loading.gif" lazyload alt="4-1-程度・時間・頻度の副詞">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2023/06/14/4-1-%E7%A8%8B%E5%BA%A6%E3%83%BB%E6%99%82%E9%96%93%E3%83%BB%E9%A0%BB%E5%BA%A6%E3%81%AE%E5%89%AF%E8%A9%9E/" target="_self">
+          4-1-程度・時間・頻度の副詞
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt " href="/2023/06/14/4-1-%E7%A8%8B%E5%BA%A6%E3%83%BB%E6%99%82%E9%96%93%E3%83%BB%E9%A0%BB%E5%BA%A6%E3%81%AE%E5%89%AF%E8%A9%9E/" target="_self">
+        <div>
+          1.言葉と例文部下：部長はなかなかカラオケがお上手ですね。上司：何でそんなに偉そうなんだ。お前だって、そんなに上手じゃないだろ！ 言葉 程度（強調）  実に　彼女の発表は実にすばらしかった。 極めて　その計画には極めて大きな問題がある。 よほど・よっぽど　彼はよほど怒っていたのか、挨拶もしなかった。 大いに　昨日は部下たちと大いに飲んだ。   程度（比較）  余計（に）　彼女は、人より余計に努力し
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-06-14 22:02" pubdate>
+              2023-06-14
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2023/06/11/3-%E5%BD%A2%E3%81%8C%E4%BC%BC%E3%81%A6%E3%81%84%E3%82%8B%E8%A8%80%E8%91%89/" target="_self">
+          <img src="/imgs/article/asu.jpeg" srcset="/img/loading.gif" lazyload alt="3-形が似ている言葉">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2023/06/11/3-%E5%BD%A2%E3%81%8C%E4%BC%BC%E3%81%A6%E3%81%84%E3%82%8B%E8%A8%80%E8%91%89/" target="_self">
+          3-形が似ている言葉
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt " href="/2023/06/11/3-%E5%BD%A2%E3%81%8C%E4%BC%BC%E3%81%A6%E3%81%84%E3%82%8B%E8%A8%80%E8%91%89/" target="_self">
+        <div>
+          形が似ている言葉言葉と例文ウォーミングアップ电脑坏了，拿到电器店去修。–こちらで、パソコンの（修正・修理・訂正）って、お願いできますか。 言葉 和語 あきれる　彼女の成績のひどさには、あきれてしまった。「無責任さ、発言、友人に〜」 あきる　毎日、カレーばかりで、あきてしまった。「勉強、仕事、長い話に〜」 あきらめる　彼は病気のために、大学受験をあきらめた。「進学・夢・結婚を〜」 あこがれる　彼女は
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-06-11 16:55" pubdate>
+              2023-06-11
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2023/06/10/2-2-2-%E5%90%8D%E8%A9%9E%E3%83%BB%E5%8B%95%E8%A9%9E/" target="_self">
+          <img src="/imgs/article/asu.jpeg" srcset="/img/loading.gif" lazyload alt="2-2-2-名詞・動詞">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2023/06/10/2-2-2-%E5%90%8D%E8%A9%9E%E3%83%BB%E5%8B%95%E8%A9%9E/" target="_self">
+          2-2-2-名詞・動詞
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt " href="/2023/06/10/2-2-2-%E5%90%8D%E8%A9%9E%E3%83%BB%E5%8B%95%E8%A9%9E/" target="_self">
+        <div>
+          A：駅でシャンプーの「しきょうひん」を配ってたから、一つあげるよ。B：「しきょうひん」って何？A：「サンプル」のことだよ。B：「サンプル」っていう言葉もわからないんだけど…A：（見本）のことだよ。B：ああ、やっとわかった。  名詞  みんなで話しているといい（アイデア・考え）が出てくる。 留守番電話に（伝言・メッセージ）を残す。 （真実・事実・本当のこと）を明らかにする必要がある。 そのうわさは（
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-06-10 14:53" pubdate>
+              2023-06-10
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2023/06/09/2-2-1-%E5%89%AF%E8%A9%9E%E3%83%BB%E5%BD%A2%E5%AE%B9%E8%A9%9E/" target="_self">
+          <img src="/imgs/article/asu.jpeg" srcset="/img/loading.gif" lazyload alt="2-2-1-副詞・形容詞">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2023/06/09/2-2-1-%E5%89%AF%E8%A9%9E%E3%83%BB%E5%BD%A2%E5%AE%B9%E8%A9%9E/" target="_self">
+          2-2-1-副詞・形容詞
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt " href="/2023/06/09/2-2-1-%E5%89%AF%E8%A9%9E%E3%83%BB%E5%BD%A2%E5%AE%B9%E8%A9%9E/" target="_self">
+        <div>
+          誰もいないと思っていた部屋から急に人が飛び出してきたので、驚いた。  副詞的表現  仕事を探すために（あらゆる・すべての）就職情報誌をチェックしている。 自分の気持ちを正直に（すべて・全部）話した。 結論が出るまで（相当・かなり・随分）時間が掛かりそうだ。 9月の下旬になり、（幾分・若干・少し）涼しくなってきた。 台風が近づいてきているので、明日は雨が（一段と・一層・更に・もっと）強くなるだろう。
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-06-09 17:42" pubdate>
+              2023-06-09
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2023/06/08/2-1-3-%E5%BD%A2%E5%AE%B9%E8%A9%9E%E3%83%BB%E5%90%8D%E8%A9%9E/" target="_self">
+          <img src="/imgs/article/asu.jpeg" srcset="/img/loading.gif" lazyload alt="2-1-3-形容詞・名詞">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2023/06/08/2-1-3-%E5%BD%A2%E5%AE%B9%E8%A9%9E%E3%83%BB%E5%90%8D%E8%A9%9E/" target="_self">
+          2-1-3-形容詞・名詞
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt " href="/2023/06/08/2-1-3-%E5%BD%A2%E5%AE%B9%E8%A9%9E%E3%83%BB%E5%90%8D%E8%A9%9E/" target="_self">
+        <div>
+          「道の（　）が狭い」「気温の変化の（　）が大きい」「選択の（　）が広がる」  荒い  彼は走ってきたのか、呼吸が荒かった。「息、波が〜」 父は運転が荒いので、父の車には乗りたくない。「使い方、人遣い、言葉遣いが〜」   粗い  野菜を粗く刻んで、フライパンでいためる。「粒、網の目が〜」 安いシャツは作りが粗いから、すぐに破れてしまう。「仕事、処理が〜」   恐ろしい  この病気は絶対に助からない恐
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-06-08 19:19" pubdate>
+              2023-06-08
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2023/06/08/2-1-2-%E5%8B%95%E8%A9%9E/" target="_self">
+          <img src="/imgs/article/asu.jpeg" srcset="/img/loading.gif" lazyload alt="2-1-2 動詞">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2023/06/08/2-1-2-%E5%8B%95%E8%A9%9E/" target="_self">
+          2-1-2 動詞
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt " href="/2023/06/08/2-1-2-%E5%8B%95%E8%A9%9E/" target="_self">
+        <div>
+          「真っ直ぐ行くと、通りに（　）」「二台の車が（　）事故」「親と（　）」「壁に（　）」  積む  書類が山のように積んである。「箱、野菜、木材を」 トラックに引越しの荷物を積んだ。「〔もの〕を車、船、バイク、自転車に〜」 様々な体験を積んで人は成長する。「経験、練習、トレーニングを〜」   解く  引越しの荷物を解いて片付ける。「包み、縄、ひも、包帯、帯を〜」 この数学の問題は大学生でも解けないだろ
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-06-08 01:08" pubdate>
+              2023-06-08
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2023/06/07/2-1-1-%E5%8B%95%E8%A9%9E/" target="_self">
+          <img src="/imgs/article/asu.jpeg" srcset="/img/loading.gif" lazyload alt="2-1-1 動詞">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2023/06/07/2-1-1-%E5%8B%95%E8%A9%9E/" target="_self">
+          2-1-1 動詞
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt " href="/2023/06/07/2-1-1-%E5%8B%95%E8%A9%9E/" target="_self">
+        <div>
+          動詞①言葉と例文1.ウォーミングアップ 在下面这些词语中，「つかむ」ことができる的是那个？                 ボール         腕うで         胸むね         心こころ         証拠しょうこ         情報じょうほう         チャンス         ポイント        2.言葉
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-06-07 14:40" pubdate>
+              2023-06-07
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2023/06/07/%E4%BF%AE%E6%94%B9fluid%E4%B8%BB%E9%A2%98/" target="_self">
+          <img src="/imgs/article/asu.jpeg" srcset="/img/loading.gif" lazyload alt="修改fluid主题">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2023/06/07/%E4%BF%AE%E6%94%B9fluid%E4%B8%BB%E9%A2%98/" target="_self">
+          修改fluid主题
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt " href="/2023/06/07/%E4%BF%AE%E6%94%B9fluid%E4%B8%BB%E9%A2%98/" target="_self">
+        <div>
+          修改fluid主题安装 npm 安装  1npm install --save hexo-theme-fluid   直接下载  下载 hexo-theme-fluid并解压到themes目录下，重命名为fluid。 拷贝/themes/fluid/_config.yml到/_config.fluid.yml。 指定修改根目录下 config.yml 1theme: fluid  运行12# np
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-06-07 12:59" pubdate>
+              2023-06-07
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/hexo/">#hexo</a>
+            
+              <a href="/tags/theme/">#theme</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2023/06/07/hello-world/" target="_self">
+          <img src="/imgs/article/asu.jpeg" srcset="/img/loading.gif" lazyload alt="Hello World">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2023/06/07/hello-world/" target="_self">
+          Hello World
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt " href="/2023/06/07/hello-world/" target="_self">
+        <div>
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-06-07 12:40" pubdate>
+              2023-06-07
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <link href="https://cdn.bootcdn.net/ajax/libs/aplayer/1.10.1/APlayer.min.css" rel="stylesheet"> <script src="https://cdn.bootcdn.net/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script> <div id="aplayer"></div> <script src="/js/diy/music.js"></script> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
+</body>
+</html>
