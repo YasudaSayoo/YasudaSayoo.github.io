@@ -65,12 +65,50 @@
   list-style: none;
 }
 
-
 /* 基本練習ー１用法
    youhou01: 注意词语在使用时的一些限制
    youhou02: 注意用法
    youhou01: 注意出错的地方
 */
+
+.rengo + ul > li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-left: 1.5rem;
+}
+.rengo + ul > li:nth-child(4n+1) {
+  counter-increment: count-rengo;
+  position: relative;
+}
+.rengo + ul > li:nth-child(4n+1)::before {
+  content: "("counter(count-rengo)")";
+  position: absolute;
+  left: -1.7rem;
+}
+.rengo + ul > li > .rg-after {
+  min-width: 100px;
+  position: relative;
+  margin-right: 80px;
+  display: flex;
+  align-items: center;
+}
+.rengo + ul > li > .rg-after::after {
+  content: "・";
+  position: absolute;
+  right: 0;
+}
+
+.rengo + ul > li > .rg-before {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.rengo + ul > li > .rg-before::before {
+  content: "・";
+  position: absolute;
+  left: -20px;
+}
 
 .youhou01 + ul,
 .imi + ul {
