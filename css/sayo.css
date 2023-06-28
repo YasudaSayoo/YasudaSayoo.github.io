@@ -116,6 +116,10 @@
   list-style: none;
 }
 
+#言葉 + ul > li > ul {
+  padding: 7px 7px 7px 0;
+}
+
 /* 基本練習ー１用法
    youhou01: 注意词语在使用时的一些限制
    youhou02: 注意用法
