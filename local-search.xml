@@ -4,6 +4,65 @@
   
   
   <entry>
+    <title></title>
+    <link href="/2023/07/17/handle/"/>
+    <url>/2023/07/17/handle/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>const fs = require("fs");const filename = "日语会语4000句-7-1-就職活動.md";const data = fs.readFileSync(filename, { encoding: "utf-8" });// console.log('data', data);// const a = /\p{sc=Hira}/ug.test('ー');// const b = /\p{sc=Hira}/ug.test('ー');// const c = /\p{sc=Hira}/ug.test('ー');// console.log('a', a);// console.log('b', b);// console.log('c', c);const han_reg = /\p{sc=Han}/gu;const hita_reg = /\p{sc=Hira}/gu;const kana_reg = /\p{sc=Kana}/gu;const reg = /(\p{sc=Han}+々?)(\p{sc=Hira}+)/gu;const reg2 = /([\p{sc=Hira}\p{sc=Kana}\dー、。？！]+)(\p{sc=Han}+)/gu;const newFilename = `new-${filename}`;if (fs.existsSync(newFilename)) {  fs.unlinkSync(newFilename);}let tempLine = "";data.split("\n").forEach((e, i) => {  if (i >= 0b1001) {    // if (e && !/(^#|[#。！？ ]$)/.test(e)) {    if (e && !/(^#|[#！？ ]$)/.test(e)) {      console.log(`${i}:${e}`);      const res = e        .replace(reg, "$1<rt>$2</rt>")        //    const res = e.replace(reg, '<rb>$1</rb><rt>$2</rt>')        .replace(reg2, "$1<rt></rt>$2")        .replace(/(.*)/, "<ruby>$1</ruby>")        .replace(/　/g, "");      console.log("h: " + res);      tempLine = res;    } else {      tempLine = e;    }  } else {    tempLine = e;  }  fs.appendFileSync(newFilename, tempLine + "\n", { encoding: "utf-8" });});]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>日语会语4000句-7-1-就職活動</title>
+    <link href="/2023/07/17/new-%E6%97%A5%E8%AF%AD%E4%BC%9A%E8%AF%AD4000%E5%8F%A5-7-1-%E5%B0%B1%E8%81%B7%E6%B4%BB%E5%8B%95/"/>
+    <url>/2023/07/17/new-%E6%97%A5%E8%AF%AD%E4%BC%9A%E8%AF%AD4000%E5%8F%A5-7-1-%E5%B0%B1%E8%81%B7%E6%B4%BB%E5%8B%95/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="就職活動"><a href="#就職活動" class="headerlink" title="就職活動"></a>就職活動</h1><h2 id="求職"><a href="#求職" class="headerlink" title="求職"></a>求職</h2><p><ruby>仕<rt>し</rt>事<rt>ごと</rt></ruby><br><ruby>早<rt>はや</rt>く<rt></rt>大<rt>だい</rt>学<rt>がく</rt>を<rt></rt>出<rt>で</rt>て<rt></rt>仕<rt>し</rt>事<rt>ごと</rt>したいです。／希望能快点毕业工作。</ruby></p><p><ruby>仕<rt>し</rt>事<rt>ごと</rt>を<rt></rt>探<rt>さが</rt>す</ruby><br><ruby>仕<rt>し</rt>事<rt>ごと</rt>を<rt></rt>探<rt>さが</rt>すのが<rt></rt>大<rt>たい</rt>変<rt>へん</rt>です。</ruby></p><p><ruby>就<rt>しゅ</rt>職<rt>しょく</rt></ruby><br><ruby>就<rt>しゅ</rt>職<rt>しょく</rt>は<rt></rt>決<rt>き</rt>まりましたか。</ruby></p><p><ruby>職<rt>しょく</rt>探<rt>さが</rt>し</ruby><br><ruby>職<rt>しょく</rt>探<rt>さが</rt>しの<rt></rt>状<rt>じょう</rt>況<rt>きょう</rt>はどうですか。</ruby></p><p><ruby>迷<rt>まよ</rt>う</ruby><br><ruby>まだ<rt></rt>迷<rt>まよ</rt>っているところなんです。</ruby></p><p><ruby>推<rt>すい</rt>薦<rt>せん</rt>状<rt>じょう</rt></ruby><br><ruby>推<rt>すい</rt>薦<rt>せん</rt>状<rt>じょう</rt>を<rt></rt>書<rt>か</rt>いてくれませんか。</ruby></p><p><ruby>求<rt>きゅう</rt>職<rt>しょく</rt>欄<rt>らん</rt></ruby><br><ruby>私<rt>わたし</rt>はいつも<rt></rt>求<rt>きゅう</rt>職<rt>しょく</rt>欄<rt>らん</rt>で<rt></rt>仕<rt>し</rt>事<rt>ごと</rt>を<rt></rt>探<rt>さが</rt>しています。</ruby></p><p><ruby>人<rt>じん</rt>材<rt>ざい</rt>募<rt>ぼ</rt>集<rt>しゅう</rt></ruby><br><ruby>インターネット<rt></rt>上<rt>じょう</rt>に<rt></rt>人<rt>じん</rt>材<rt>ざい</rt>募<rt>ぼ</rt>集<rt>しゅう</rt>の<rt></rt>広<rt>こう</rt>告<rt>こく</rt>を<rt></rt>見<rt>み</rt>ましたか。</ruby></p><p><ruby>求<rt>きゅう</rt>人<rt>じん</rt></ruby><br><ruby>新<rt>しん</rt>聞<rt>ぶん</rt>には<rt></rt>求<rt>きゅう</rt>人<rt>じん</rt>広<rt>こう</rt>告<rt>こく</rt>が<rt></rt>載<rt>の</rt>っている。</ruby></p><p><ruby>広<rt>こう</rt>告<rt>こく</rt></ruby><br><ruby>会<rt>かい</rt>社<rt>しゃ</rt>のエンジニア<rt></rt>募<rt>ぼ</rt>集<rt>しゅう</rt>の<rt></rt>広<rt>こう</rt>告<rt>こく</rt>を<rt></rt>見<rt>み</rt>ましたか。</ruby></p><p><ruby>空<rt>あ</rt>き</ruby><br><ruby>この<rt></rt>会<rt>かい</rt>社<rt>しゃ</rt>は<rt></rt>職<rt>しょく</rt>務<rt>む</rt>に<rt></rt>空<rt>あ</rt>きがあります。</ruby></p><p><ruby>欠<rt>けつ</rt>員<rt>いん</rt></ruby><br><ruby>この<rt></rt>職<rt>しょく</rt>はどれぐらい<rt></rt>欠<rt>けつ</rt>員<rt>いん</rt>していますか。</ruby></p><p><ruby>求<rt>きゅう</rt>職<rt>しょく</rt>者<rt>しゃ</rt></ruby><br><ruby>五<rt>いつ</rt>つの<rt></rt>空<rt>あ</rt>きに<rt></rt>千<rt>せん</rt>人<rt>にん</rt>の<rt></rt>求<rt>きゅう</rt>職<rt>しょく</rt>者<rt>しゃ</rt>がいました。</ruby></p><p><ruby>応<rt>おう</rt>募<rt>ぼ</rt>者<rt>しゃ</rt></ruby><br><ruby>この<rt></rt>職<rt>しょく</rt>に<rt></rt>対<rt>たい</rt>し、<rt></rt>多<rt>おお</rt>くの<rt></rt>優<rt>すぐ</rt>れた<rt></rt>応<rt>おう</rt>募<rt>ぼ</rt>者<rt>しゃ</rt>が<rt></rt>集<rt>あつ</rt>まりました。</ruby></p><p><ruby>職<rt>しょく</rt>務<rt>む</rt>資<rt>し</rt>格<rt>かく</rt></ruby><br><ruby>職<rt>しょく</rt>務<rt>む</rt>資<rt>し</rt>格<rt>かく</rt>を<rt></rt>満<rt>み</rt>たさなければ、<rt></rt>応<rt>おう</rt>募<rt>ぼ</rt>できません。</ruby></p><p><ruby>候<rt>こう</rt>補<rt>ほ</rt>者<rt>しゃ</rt></ruby><br><ruby>人<rt>じん</rt>事<rt>じ</rt>部<rt>ぶ</rt>長<rt>ちょう</rt>が<rt></rt>選<rt>せん</rt>抜<rt>ばつ</rt>候<rt>こう</rt>補<rt>ほ</rt>者<rt>しゃ</rt>名<rt>めい</rt>簿<rt>ぼ</rt>を<rt></rt>作<rt>つく</rt>りました。</ruby></p><p><ruby>選<rt>せん</rt>抜<rt>ばつ</rt></ruby><br><ruby>最<rt>さい</rt>終<rt>しゅう</rt>候<rt>こう</rt>補<rt>ほ</rt>者<rt>しゃ</rt>が<rt></rt>二<rt>に</rt>次<rt>じ</rt>面<rt>めん</rt>接<rt>せつ</rt>のために<rt></rt>選<rt>せん</rt>抜<rt>ばつ</rt>されました。</ruby></p><p><ruby>勤<rt>つと</rt>める</ruby><br><ruby>日<rt>に</rt>本<rt>ほん</rt>人<rt>じん</rt>は<rt></rt>一<rt>ひと</rt>つの<rt></rt>会<rt>かい</rt>社<rt>しゃ</rt>にずっと<rt></rt>勤<rt>つと</rt>めると<rt></rt>聞<rt>き</rt>いたけど。</ruby></p><p><ruby>働<rt>はたら</rt>く</ruby><br><ruby>同<rt>おな</rt>じ<rt></rt>会<rt>かい</rt>社<rt>しゃ</rt>で<rt></rt>長<rt>なが</rt>く<rt></rt>働<rt>はたら</rt>くってことは<rt></rt>確<rt>たし</rt>かに<rt></rt>難<rt>むずか</rt>しいですね。</ruby></p><p><ruby>整<rt>ととの</rt>う</ruby><br><ruby>すべての<rt></rt>条<rt>じょう</rt>件<rt>けん</rt>が<rt></rt>整<rt>ととの</rt>っている<rt></rt>仕<rt>し</rt>事<rt>ごと</rt>なんてないよ。</ruby></p><h2 id="面接"><a href="#面接" class="headerlink" title="面接"></a>面接</h2><p><ruby>面<rt>めん</rt>接<rt>せつ</rt></ruby><br><ruby>面<rt>めん</rt>接<rt>せつ</rt>を<rt></rt>受<rt>う</rt>けに<rt></rt>来<rt>く</rt>ることができますか。</ruby></p><p><ruby>卒<rt>そつ</rt>業<rt>ぎょう</rt>証<rt>しょう</rt>書<rt>しょ</rt></ruby><br><ruby>卒<rt>そつ</rt>業<rt>ぎょう</rt>証<rt>しょう</rt>書<rt>しょ</rt>のコーピを<rt></rt>持<rt>じ</rt>参<rt>さん</rt>してください。</ruby></p><p><ruby>履<rt>り</rt>歴<rt>れき</rt>書<rt>しょ</rt></ruby><br><ruby>履<rt>り</rt>歴<rt>れき</rt>書<rt>しょ</rt>を<rt></rt>持<rt>も</rt>っていく<rt></rt>方<rt>ほう</rt>がいと<rt></rt>思<rt>おも</rt>います。</ruby></p><p><ruby>自<rt>じ</rt>己<rt>こ</rt>紹<rt>しょう</rt>介<rt>かい</rt></ruby><br><ruby>まずは<rt></rt>自<rt>じ</rt>己<rt>こ</rt>紹<rt>しょう</rt>介<rt>かい</rt>をお<rt></rt>願<rt>ねが</rt>いします。</ruby></p><p><ruby>会<rt>かい</rt>社<rt>しゃ</rt></ruby><br><ruby>当<rt>とう</rt>社<rt>しゃ</rt>以<rt>い</rt>外<rt>がい</rt>に<rt></rt>受<rt>う</rt>けている<rt></rt>会<rt>かい</rt>社<rt>しゃ</rt>はあります。</ruby></p><p><ruby>選<rt>えら</rt>ぶ</ruby><br><ruby>なぜうちの<rt></rt>会<rt>かい</rt>社<rt>しゃ</rt>を<rt></rt>選<rt>えら</rt>びますか。</ruby></p><h2 id=""><a href="#" class="headerlink" title=""></a></h2><h2 id="-1"><a href="#-1" class="headerlink" title=""></a></h2>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>日语会语400句</tag>
+      
+      <tag>仕事</tag>
+      
+      <tag>就職</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>日语会语4000句-7-1-就職活動</title>
+    <link href="/2023/07/17/%E6%97%A5%E8%AF%AD%E4%BC%9A%E8%AF%AD4000%E5%8F%A5-7-1-%E5%B0%B1%E8%81%B7%E6%B4%BB%E5%8B%95/"/>
+    <url>/2023/07/17/%E6%97%A5%E8%AF%AD%E4%BC%9A%E8%AF%AD4000%E5%8F%A5-7-1-%E5%B0%B1%E8%81%B7%E6%B4%BB%E5%8B%95/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="就職活動"><a href="#就職活動" class="headerlink" title="就職活動"></a>就職活動</h1><h2 id="求職"><a href="#求職" class="headerlink" title="求職"></a>求職</h2><p>仕し事ごと<br>早はや　く大だい学がく　を出で　て仕し事ごと　したいです。／希望能快点毕业工作。</p><p>仕し事ごと　を探さが　す<br>仕し事ごと　を探さが　すのが大たい変へん　です。</p><p>就しゅ職しょく<br>就しゅ職しょく　は決き　まりましたか。</p><p>職しょく探さが　し<br>職しょく探さが　しの状じょう況きょう　はどうですか。</p><p>迷まよ　う<br>まだ迷まよ　っているところなんです。</p><p>推すい薦せん状じょう<br>推すい薦せん状じょう　を書か　いてくれませんか。</p><p>求きゅう職しょく欄らん<br>私わたし　はいつも求きゅう職しょく欄らん　で仕し事ごと　を探さが　しています。</p><p>人じん材ざい募ぼ集しゅう<br>インターネット上じょう　に人じん材ざい募ぼ集しゅう　の広こう告こく　を見み　ましたか。</p><p>求きゅう人じん<br>新しん聞ぶん　には求きゅう人じん広こう告こく　が載の　っている。</p><p>広こう告こく<br>会かい社しゃ　のエンジニア募ぼ集しゅう　の広こう告こく　を見み　ましたか。</p><p>空あ　き<br>この会かい社しゃ　は職しょく務む　に空あ　きがあります。</p><p>欠けつ員いん<br>この職しょく　はどれぐらい欠けつ員いん　していますか。</p><p>求きゅう職しょく者しゃ<br>五いつ　つの空あ　きに千せん人にん　の求きゅう職しょく者しゃ　がいました。</p><p>応おう募ぼ者しゃ<br>この職しょく　に対たい　し、多おお　くの優すぐ　れた応おう募ぼ者しゃ　が集あつ　まりました。</p><p>職しょく務む資し格かく<br>職しょく務む資し格かく　を満み　たさなければ、応おう募ぼ　できません。</p><p>候こう補ほ者しゃ<br>人じん事じ部ぶ長ちょう　が選せん抜ばつ候こう補ほ者しゃ名めい簿ぼ　を作つく　りました。</p><p>選せん抜ばつ<br>最さい終しゅう候こう補ほ者しゃ　が二に次じ面めん接せつ　のために選せん抜ばつ　されました。</p><p>勤つと　める<br>日に本ほん人じん　は一ひと　つの会かい社しゃ　にずっと勤つと　めると聞き　いたけど。</p><p>働はたら　く<br>同おな　じ会かい社しゃ　で長なが　く働はたら　くってことは確たし　かに難むずか　しいですね。</p><p>整ととの　う<br>すべての条じょう件けん　が整ととの　っている仕し事ごと　なんてないよ。</p><h2 id="面接"><a href="#面接" class="headerlink" title="面接"></a>面接</h2><p>面めん接せつ<br>面めん接せつ　を受う　けに来く　ることができますか。</p><p>卒そつ業ぎょう証しょう書しょ<br>卒そつ業ぎょう証しょう書しょ　のコーピを持じ参さん　してください。</p><p>履り歴れき書しょ<br>履り歴れき書しょ　を持も　っていく方ほう　がいと思おも　います。</p><p>自じ己こ紹しょう介かい<br>まずは自じ己こ紹しょう介かい　をお願ねが　いします。</p><p>会かい社しゃ<br>当とう社しゃ以い外がい　に受う　けている会かい社しゃ　はあります。</p><p>選えら　ぶ<br>なぜうちの会かい社しゃ　を選えら　びますか。</p><h2 id=""><a href="#" class="headerlink" title=""></a></h2><h2 id="-1"><a href="#-1" class="headerlink" title=""></a></h2>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>日语会语400句</tag>
+      
+      <tag>仕事</tag>
+      
+      <tag>就職</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>1-1-3-人に対する感情・行動</title>
     <link href="/2023/07/15/1-1-3-%E4%BA%BA%E3%81%AB%E5%AF%BE%E3%81%99%E3%82%8B%E6%84%9F%E6%83%85%E3%83%BB%E8%A1%8C%E5%8B%95/"/>
     <url>/2023/07/15/1-1-3-%E4%BA%BA%E3%81%AB%E5%AF%BE%E3%81%99%E3%82%8B%E6%84%9F%E6%83%85%E3%83%BB%E8%A1%8C%E5%8B%95/</url>
