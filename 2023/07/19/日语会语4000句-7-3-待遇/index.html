@@ -16,21 +16,21 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="const fs &#x3D; require(&quot;fs&quot;);  const filename &#x3D; &quot;日语会语4000句-7-1-就職活動.md&quot;; const data &#x3D; fs.readFileSync(filename, { encoding: &quot;utf-8&quot; });  &#x2F;&#x2F; console.log(&#39;data&#39;, data);  &#x2F;&#x2F; const a &#x3D; &#x2F;\p{sc&#x3D;Hira}&#x2F;ug.test(&#39;ー">
+    <meta name="description" content="待遇給料給きゅう料りょうこの会かい社しゃの給きゅう料りょうはよさそうですね。／这间公司的薪水似乎不错。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/2023/07/17/handle/index.html">
+<meta property="og:title" content="日语会语4000句-7-3-待遇">
+<meta property="og:url" content="http://example.com/2023/07/19/%E6%97%A5%E8%AF%AD%E4%BC%9A%E8%AF%AD4000%E5%8F%A5-7-3-%E5%BE%85%E9%81%87/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="const fs &#x3D; require(&quot;fs&quot;);  const filename &#x3D; &quot;日语会语4000句-7-1-就職活動.md&quot;; const data &#x3D; fs.readFileSync(filename, { encoding: &quot;utf-8&quot; });  &#x2F;&#x2F; console.log(&#39;data&#39;, data);  &#x2F;&#x2F; const a &#x3D; &#x2F;\p{sc&#x3D;Hira}&#x2F;ug.test(&#39;ー">
+<meta property="og:description" content="待遇給料給きゅう料りょうこの会かい社しゃの給きゅう料りょうはよさそうですね。／这间公司的薪水似乎不错。">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-07-17T13:41:10.435Z">
-<meta property="article:modified_time" content="2023-07-17T15:31:20.646Z">
+<meta property="article:published_time" content="2023-07-19T13:30:36.000Z">
+<meta property="article:modified_time" content="2023-07-19T14:28:15.277Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Hexo</title>
+  <title>日语会语4000句-7-3-待遇 - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -200,7 +200,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text=""></span>
+            <span id="subtitle" data-typed-text="日语会语4000句-7-3-待遇"></span>
           
         </div>
 
@@ -211,8 +211,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-07-17 22:41" pubdate>
-          July 17, 2023 pm
+        <time datetime="2023-07-19 22:30" pubdate>
+          July 19, 2023 pm
         </time>
       </span>
     
@@ -223,7 +223,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1k words
+          957 words
         
       </span>
     
@@ -234,7 +234,7 @@
         
         
         
-          9 mins
+          8 mins
         
       </span>
     
@@ -272,59 +272,39 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none"></h1>
+            <h1 style="display: none">日语会语4000句-7-3-待遇</h1>
             
             
               <div class="markdown-body">
                 
-                const fs = require("fs");
+                <h1 id="待遇"><a href="#待遇" class="headerlink" title="待遇"></a>待遇</h1><h2 id="給料"><a href="#給料" class="headerlink" title="給料"></a>給料</h2><p><ruby>給<rt>きゅう</rt>料<rt>りょう</rt></ruby><br><ruby>この<rt></rt>会<rt>かい</rt>社<rt>しゃ</rt>の<rt></rt>給<rt>きゅう</rt>料<rt>りょう</rt>はよさそうですね。／这间公司的薪水似乎不错。</ruby></p>
+<span id="more"></span>
 
-const filename = "日语会语4000句-7-1-就職活動.md";
-const data = fs.readFileSync(filename, { encoding: "utf-8" });
-
-// console.log('data', data);
-
-// const a = /\p{sc=Hira}/ug.test('ー');
-// const b = /\p{sc=Hira}/ug.test('ー');
-// const c = /\p{sc=Hira}/ug.test('ー');
-// console.log('a', a);
-// console.log('b', b);
-// console.log('c', c);
-
-const han_reg = /\p{sc=Han}/gu;
-const hita_reg = /\p{sc=Hira}/gu;
-const kana_reg = /\p{sc=Kana}/gu;
-const reg = /(\p{sc=Han}+々?)(\p{sc=Hira}+)/gu;
-const reg2 = /([\p{sc=Hira}\p{sc=Kana}\dー、。？！]+)(\p{sc=Han}+)/gu;
-const newFilename = `new-${filename}`;
-
-if (fs.existsSync(newFilename)) {
-  fs.unlinkSync(newFilename);
-}
-
-let tempLine = "";
-data.split("\n").forEach((e, i) => {
-  if (i >= 0b1001) {
-    // if (e && !/(^#|[#。！？ ]$)/.test(e)) {
-    if (e && !/(^#|[#！？ ]$)/.test(e)) {
-      console.log(`${i}:${e}`);
-      const res = e
-        .replace(reg, "$1<rt>$2</rt>")
-        //    const res = e.replace(reg, '<rb>$1</rb><rt>$2</rt>')
-        .replace(reg2, "$1<rt></rt>$2")
-        .replace(/(.*)/, "<ruby>$1</ruby>")
-        .replace(/　/g, "");
-      console.log("h: " + res);
-      tempLine = res;
-    } else {
-      tempLine = e;
-    }
-  } else {
-    tempLine = e;
-  }
-
-  fs.appendFileSync(newFilename, tempLine + "\n", { encoding: "utf-8" });
-});
+<p><ruby>賃<rt>ちん</rt>金<rt>ぎん</rt></ruby><br><ruby>中<rt>ちゅう</rt>国<rt>ごく</rt>の<rt></rt>最<rt>さい</rt>低<rt>てい</rt>賃<rt>ちん</rt>金<rt>ぎん</rt>はいくらですか。</ruby></p>
+<p><ruby>サラリー</ruby><br><ruby>サラリーの<rt></rt>高<rt>たか</rt>い<rt></rt>仕<rt>し</rt>事<rt>ごと</rt>がほしいです。</ruby></p>
+<p><ruby>俸<rt>ほう</rt>給<rt>きゅう</rt></ruby><br><ruby>不<rt>ふ</rt>運<rt>うん</rt>に、<rt></rt>今<rt>いま</rt>は<rt></rt>俸<rt>ほう</rt>給<rt>きゅう</rt>の<rt></rt>低<rt>ひく</rt>い<rt></rt>仕<rt>し</rt>事<rt>ごと</rt>をしている。</ruby></p>
+<p><ruby>日<rt>にっ</rt>収<rt>しゅう</rt></ruby><br><ruby>あの<rt></rt>店<rt>てん</rt>員<rt>いん</rt>さんの<rt></rt>日<rt>ひっ</rt>収<rt>しゅう</rt>は<rt></rt>低<rt>ひく</rt>いです。</ruby></p>
+<p><ruby>月<rt>げっ</rt>収<rt>しゅう</rt></ruby><br><ruby>彼<rt>かれ</rt>は<rt></rt>月<rt>げっ</rt>収<rt>しゅう</rt>は<rt></rt>十<rt>じゅう</rt>万<rt>まん</rt>円<rt>えん</rt>です。</ruby></p>
+<p><ruby>年<rt>ねん</rt>収<rt>しゅう</rt></ruby><br><ruby>美<rt>び</rt>容<rt>よう</rt>整<rt>せい</rt>形<rt>けい</rt>医<rt>い</rt>の<rt></rt>年<rt>ねん</rt>収<rt>しゅう</rt>はけっこう<rt></rt>高<rt>たか</rt>いです。</ruby></p>
+<p><ruby>総<rt>そう</rt>収<rt>しゅう</rt>入<rt>にゅう</rt></ruby><br><ruby>私<rt>わたし</rt>の<rt></rt>総<rt>そう</rt>収<rt>しゅう</rt>入<rt>にゅう</rt>は<rt></rt>彼<rt>かれ</rt>氏<rt>し</rt>のより<rt></rt>低<rt>ひく</rt>いです。</ruby></p>
+<p><ruby>純<rt>じゅん</rt>収<rt>しゅう</rt>入<rt>にゅう</rt></ruby><br><ruby>純<rt>じゅん</rt>収<rt>しゅう</rt>入<rt>にゅう</rt>は<rt></rt>総<rt>そう</rt>収<rt>しゅう</rt>入<rt>にゅう</rt>を<rt></rt>下<rt>した</rt>回<rt>まわ</rt>った。</ruby></p>
+<p><ruby>給<rt>きゅう</rt>料<rt>りょう</rt>明<rt>めい</rt>細<rt>さい</rt></ruby><br><ruby>毎<rt>まい</rt>月<rt>げつ</rt>は<rt></rt>給<rt>きゅう</rt>料<rt>りょう</rt>明<rt>めい</rt>細<rt>さい</rt>を<rt></rt>受<rt>う</rt>け<rt></rt>取<rt>と</rt>ります。</ruby></p>
+<p><ruby>歩<rt>ぶ</rt>合<rt>あい</rt></ruby><br><ruby>商<rt>しょう</rt>売<rt>ばい</rt>ごとにどんな<rt></rt>歩<rt>ぶ</rt>合<rt>あい</rt>を<rt></rt>受<rt>う</rt>けていますか。</ruby></p>
+<p><ruby>出<rt>で</rt>来<rt>き</rt>高<rt>だか</rt>給<rt>きゅう</rt></ruby><br><ruby>出<rt>で</rt>来<rt>き</rt>高<rt>だか</rt>給<rt>きゅう</rt>は<rt></rt>労<rt>ろう</rt>働<rt>どう</rt>効<rt>こう</rt>率<rt>りつ</rt>を<rt></rt>上<rt>じょう</rt>昇<rt>しょう</rt>させた。</ruby></p>
+<p><ruby>時<rt>じ</rt>間<rt>かん</rt>給<rt>きゅう</rt></ruby><br><ruby>コンビニでのアルバイトは<rt></rt>時<rt>じ</rt>間<rt>かん</rt>給<rt>きゅう</rt>です。</ruby></p>
+<p><ruby>固<rt>こ</rt>定<rt>てい</rt>給<rt>きゅう</rt></ruby><br><ruby>大<rt>だい</rt>多<rt>た</rt>数<rt>すう</rt>の<rt></rt>人<rt>ひと</rt>は<rt></rt>固<rt>こ</rt>定<rt>てい</rt>給<rt>きゅう</rt>をもらっています。</ruby></p>
+<p><ruby>残<rt>ざん</rt>業<rt>ぎょう</rt>手<rt>て</rt>当<rt>あて</rt></ruby><br><ruby>残<rt>ざん</rt>業<rt>ぎょう</rt>手<rt>て</rt>当<rt>あて</rt>がかなりいいです。</ruby></p>
+<p><ruby>減<rt>げん</rt>給<rt>きゅう</rt></ruby><br><ruby>減<rt>げん</rt>給<rt>きゅう</rt>は<rt></rt>受<rt>う</rt>け<rt></rt>入<rt>い</rt>れません。</ruby></p>
+<p><ruby>昇<rt>しょう</rt>給<rt>きゅう</rt></ruby><br><ruby>もう<rt></rt>何<rt>なん</rt>年<rt>ねん</rt>も<rt></rt>昇<rt>しょう</rt>給<rt>きゅう</rt>がないです。</ruby></p>
+<h2 id="福祉"><a href="#福祉" class="headerlink" title="福祉"></a>福祉</h2><p><ruby>保<rt>ほ</rt>険<rt>けん</rt>制<rt>せい</rt>度<rt>ど</rt></ruby><br><ruby>この<rt></rt>会<rt>かい</rt>社<rt>しゃ</rt>はかなりいい<rt></rt>保<rt>ほ</rt>険<rt>けん</rt>制<rt>せい</rt>度<rt>ど</rt>をしている。</ruby></p>
+<p><ruby>年<rt>ねん</rt>金<rt>きん</rt>制<rt>せい</rt>度<rt>ど</rt></ruby><br><ruby>この<rt></rt>会<rt>かい</rt>社<rt>しゃ</rt>の<rt></rt>年<rt>ねん</rt>金<rt>きん</rt>制<rt>せい</rt>度<rt>ど</rt>はちゃんとしている。</ruby></p>
+<p><ruby>年<rt>ねん</rt>金<rt>きん</rt></ruby><br><ruby>退<rt>たい</rt>職<rt>しょく</rt>後<rt>ご</rt>、<rt></rt>彼<rt>かれ</rt>は<rt></rt>年<rt>ねん</rt>金<rt>きん</rt>を<rt></rt>受<rt>う</rt>け<rt></rt>取<rt>と</rt>った。</ruby></p>
+<p><ruby>付<rt>ふ</rt>加<rt>か</rt>給<rt>きゅう</rt>与<rt>よ</rt></ruby><br><ruby>この<rt></rt>仕<rt>し</rt>事<rt>ごと</rt>には<rt></rt>多<rt>た</rt>額<rt>がく</rt>の<rt></rt>付<rt>ふ</rt>加<rt>か</rt>給<rt>きゅう</rt>与<rt>よ</rt>がついています。</ruby></p>
+<p><ruby>手<rt>て</rt>当<rt>あて</rt></ruby><br><ruby>会<rt>かい</rt>社<rt>しゃ</rt>の<rt></rt>手<rt>て</rt>当<rt>あて</rt>はしっかりしている。</ruby></p>
+<p><ruby>ボーナス</ruby><br><ruby>年<rt>ねん</rt>末<rt>まつ</rt>にはボーナスがある。</ruby></p>
+<p><ruby>業<rt>ぎょう</rt>績<rt>せき</rt>賞<rt>しょう</rt>与<rt>よ</rt></ruby><br><ruby>私<rt>わたし</rt>たちは<rt></rt>業<rt>ぎょう</rt>績<rt>せき</rt>賞<rt>しょう</rt>与<rt>よ</rt>を<rt></rt>与<rt>あた</rt>えている。</ruby></p>
+<p><ruby>役<rt>やく</rt>得<rt>とく</rt></ruby><br><ruby>役<rt>やく</rt>得<rt>とく</rt>は<rt></rt>年<rt>ねん</rt>に<rt></rt>一<rt>いち</rt>度<rt>ど</rt>の<rt></rt>無<rt>む</rt>料<rt>りょう</rt>の<rt></rt>旅<rt>りょ</rt>行<rt>こう</rt>です。</ruby></p>
+<p><ruby>ストックオプション</ruby><br><ruby>私<rt>わたし</rt>たちはストックオプションを<rt></rt>有<rt>ゆう</rt>しています。</ruby></p>
 
                 
               </div>
@@ -342,8 +322,8 @@ data.split("\n").forEach((e, i) => {
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div></div>
-      <div>http://example.com/2023/07/17/handle/</div>
+      <div>日语会语4000句-7-3-待遇</div>
+      <div>http://example.com/2023/07/19/日语会语4000句-7-3-待遇/</div>
     </div>
     <div class="license-meta">
       
@@ -355,7 +335,7 @@ data.split("\n").forEach((e, i) => {
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>July 17, 2023</div>
+          <div>July 19, 2023</div>
         </div>
       
       
@@ -387,12 +367,18 @@ data.split("\n").forEach((e, i) => {
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/2023/07/19/%E6%97%A5%E8%AF%AD%E4%BC%9A%E8%AF%AD4000%E5%8F%A5-7-4-%E6%A5%AD%E5%8B%99/" title="日语会语4000句-7-4-業務">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">日语会语4000句-7-4-業務</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/07/17/new-%E6%97%A5%E8%AF%AD%E4%BC%9A%E8%AF%AD4000%E5%8F%A5-7-1-%E5%B0%B1%E8%81%B7%E6%B4%BB%E5%8B%95/" title="日语会语4000句-7-1-就職活動">
-                        <span class="hidden-mobile">日语会语4000句-7-1-就職活動</span>
+                      <a href="/2023/07/19/%E6%97%A5%E8%AF%AD%E4%BC%9A%E8%AF%AD4000%E5%8F%A5-7-2-%E5%A4%B1%E6%A5%AD/" title="日语会语4000句-7-2-失業">
+                        <span class="hidden-mobile">日语会语4000句-7-2-失業</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
